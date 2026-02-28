@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #EAF2FF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.nav-glass,
+.link-glass {
+  padding: 15px 30px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #bea060;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+    height: 85vh;
+    margin-top: 120px;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    color: #374151;
+    max-width: 500px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #5B6D87;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 0 #bea060;
+}
+
+.cta-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 0 #bea060;
+    background-color: #4a5c74;
+}
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #1F2937;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #bea060;
+    transform: scale(1.5);
+}
+
+.hero-right img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 12px 12px 0 #bea060;
+    transition: all 0.4s ease;
+}
+
+.hero-right img:hover {
+    transform: translate(-10px, -8px);
+    box-shadow: 18px 18px 0 #bea060;
+}
